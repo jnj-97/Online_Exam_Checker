@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Welcome {{username}}</h1> 
+<h1>Marks</h1>
+<table class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Question</th>
+      <th scope="col">Marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Question 1</td>
+      <td>{{things[0]}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Question 2</td>
+      <td>{{things[1]}}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Question 3</td>
+      <td>{{things[2]}}</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Question 4</td>
+      <td>{{things[3]}}</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Question 5</td>
+      <td>{{things[4]}}</td>
+    </tr>
+    <tr class="table-success black">
+      <th scope="row">6</th>
+      <td>Total</td>
+      <td><h5>{{marks}}</h5></td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}
